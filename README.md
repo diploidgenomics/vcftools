@@ -1,8 +1,6 @@
 # VCF_tools
 
-VCFTools is a Crystal shard for parsing VCF files.
-
-VCF is the main format used to store genomic variation in humans and other species.
+VCFTools is a Crystal shard for parsing VCF files. VCF is the main format used to store genomic variation in humans and other species.
 
 ## Installation
 
@@ -30,7 +28,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/diploidgenomics/VCF_tools/fork )
+1. Fork it (https://github.com/diploidgenomics/vcftools/fork)
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
