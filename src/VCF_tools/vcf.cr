@@ -33,7 +33,7 @@ module VCFTools
               end
 
               variant = Variant.new(chromosome, position, id, ref, alt, qual, filter, info, sample)
-              yield variant
+              yield variant, line_array
             rescue exception
               puts "Error in #{line}\n"
               raise exception
