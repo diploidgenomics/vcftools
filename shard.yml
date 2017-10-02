@@ -1,0 +1,9 @@
+name: VCF_tools
+version: 0.1.0
+
+authors:
+  - Peter Schols <info@orbicule.com>
+
+crystal: 0.23.1
+
+license: MIT
