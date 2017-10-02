@@ -1,6 +1,7 @@
 # VCF_tools
 
 VCFTools is a Crystal shard for parsing VCF files.
+
 VCF is the main format used to store genomic variation in humans and other species.
 
 ## Installation
