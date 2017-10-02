@@ -2,7 +2,7 @@ name: VCF_tools
 version: 0.1.0
 
 authors:
-  - Peter Schols <info@orbicule.com>
+  - Peter Schols <peter@diploid.com>
 
 crystal: 0.23.1
 

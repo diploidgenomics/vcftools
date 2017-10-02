@@ -1,6 +1,6 @@
 # VCF_tools
 
-VCFTools is a Crystal shard designed for reading VCF files.
+VCFTools is a Crystal shard for parsing VCF files.
 VCF is the main format used to store genomic variation in humans and other species.
 
 ## Installation
@@ -10,7 +10,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   VCF_tools:
-    github: diploidgenomics/VCF_tools
+    github: diploidgenomics/vcftools
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ dependencies:
 ```crystal
 require "VCF_tools"
 
-Vcf.new(file_path).each_variant do |variant|
+VCFTools::Vcf.new(file_path).each_variant do |variant|
   puts "#{variant.chromosome}:#{variant.position}"
 end
 ```
