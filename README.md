@@ -17,9 +17,11 @@ dependencies:
 
 ```crystal
 require "VCF_tools"
-```
 
-TODO: Write usage instructions here
+Vcf.new(file_path).each_variant do |variant|
+  puts "#{variant.chromosome}:#{variant.position}"
+end
+```
 
 ## Development
 
@@ -27,7 +29,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[your-github-name]/VCF_tools/fork )
+1. Fork it ( https://github.com/diploidgenomics/VCF_tools/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
