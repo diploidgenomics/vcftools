@@ -17,8 +17,8 @@ dependencies:
 ```crystal
 require "VCF_tools"
 
-VCFTools::Vcf.new(file_path).each_variant do |variant|
-  puts "#{variant.chromosome}:#{variant.position}"
+VCFTools::Vcf.new(file_path).each_variant do |v|
+  puts "#{v.chromosome}:#{v.position}"
 end
 ```
 
