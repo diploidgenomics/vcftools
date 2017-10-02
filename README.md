@@ -10,7 +10,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   VCF_tools:
-    github: [your-github-name]/VCF_tools
+    github: diploidgenomics/VCF_tools
 ```
 
 ## Usage
@@ -35,4 +35,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Peter Schols - creator, maintainer
+- [diploidgenomics](https://github.com/diploidgenomics) Peter Schols - creator, maintainer
