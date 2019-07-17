@@ -44,7 +44,7 @@ module VCFTools
     end
 
     # Returns the VCF header as a string
-    def header
+    def vcf_header
       header_string = ""
       File.open(file_path) do |f|
         f.each_line do |line|
