@@ -49,7 +49,7 @@ module VCFTools
       File.open(file_path) do |f|
         f.each_line do |line|
           if line.starts_with?("#")
-            header_string = header_string + line
+            header_string = header_string + line + "\n"
           else
             next
           end
