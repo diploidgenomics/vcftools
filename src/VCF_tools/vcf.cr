@@ -42,5 +42,21 @@ module VCFTools
         end
       end
     end
+
+    # Returns the VCF header as a string
+    def header
+      header_string = ""
+      File.open(file_path) do |f|
+        f.each_line do |line|
+          if line.starts_with?("#")
+            header_string << line
+          else
+            next
+          end
+        end
+      end
+      header_string
+    end
+
   end
 end
