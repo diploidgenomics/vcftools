@@ -58,5 +58,14 @@ module VCFTools
       header_string
     end
 
+    # Returns the genome build as an Int32
+    def genome_build
+      if vcf_header.includes?("hg38") || vcf_header.includes?("GRCh38")
+        38
+      else
+        37
+      end
+    end
+
   end
 end
