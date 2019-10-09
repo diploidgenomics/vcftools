@@ -65,9 +65,9 @@ module VCFTools
       # If there's a ##reference header line that includes the genome build, we return that build
       if header_string.includes?("##reference=")
         reference_string = header_string.split("##reference=")[1].split("\n")[0]
-        if reference_string.includes?("hg19") || reference_string.includes?("GRCh37")
+        if reference_string.includes?("hg19") || reference_string.includes?("GRCh37")
           return 37
-        elsif reference_string.includes?("hg38") || reference_string.includes?("GRCh38")
+        elsif reference_string.includes?("hg38") || reference_string.includes?("GRCh38")
           return 38
         end
       end
