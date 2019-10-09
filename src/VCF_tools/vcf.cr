@@ -60,10 +60,23 @@ module VCFTools
 
     # Returns the genome build as an Int32
     def genome_build
+      header_string = vcf_header
+
+      # If there's a ##reference header line that includes the genome build, we return that build
+      if header_string.includes?("##reference=")
+        reference_string = header_string.split("##reference=")[1].split("\n")[0]
+        if reference_string.includes?("hg19") || reference_string.includes?("GRCh37")
+          return 37
+        elsif reference_string.includes?("hg38") || reference_string.includes?("GRCh38")
+          return 38
+        end
+      end
+
+      # Otherwise, we check the rest of the header
       if vcf_header.includes?("hg38") || vcf_header.includes?("GRCh38")
-        38
+        return 38
       else
-        37
+        return 37
       end
     end
 
